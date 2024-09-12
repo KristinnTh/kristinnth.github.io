@@ -1,20 +1,34 @@
 *{
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .navbar{
-    background: cornflowerblue; font-family: calibri; padding-right: 15px; padding-left: 15px;
+    background: cornflowerblue; 
+    font-family: calibri; 
+    padding: 15px; 
 }
 .navdiv{
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
 }
 .logo a{
-    font-size: 35px; font-weight: 600; color: white;
+    display: block; 
+    width: 100px; 
+    height: 100px;
+    color: white;
 }
 li{
-    list-style: none; display: inline-block;
+    list-style: none; 
+    display: inline-block;
 }
 li a{
-    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-right: 25px;
 }
 body{
     background-color: lightblue;
@@ -23,4 +37,9 @@ body{
     width: 300px;
     background-position: right top;
     margin-right: 200px;
+}
+.img-logo{
+    border-radius: 50%; /*makes the image circular */
+    width: 100%; /*ensure it fits within its container */
+    height: auto; /* Maintains aspect ratio */
 }
