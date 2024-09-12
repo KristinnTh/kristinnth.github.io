@@ -12,8 +12,11 @@
 }
 /* Target html in the body*/
 body{
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
     font-family: "Poppinns", sans-serif;
+    position: relative; /* Allow absolute positioning of child elements */
+    height: 100vh; /* Ensure the body takes full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
 /*if we click links to our pages it will scroll to them in a smooth manner*/
@@ -33,9 +36,9 @@ a, .btn{
 /*  DESKTOP NAV  */
 .navbar{
     background: cornflowerblue; 
-    list-style: none;
-    font-size: 1.5rem; 
-    padding: 15px; 
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .navdiv{
     display: flex; 
@@ -81,7 +84,20 @@ li a{
 }
 
 .img-Headshot{
-    width: 300px;
-    background-position: right top;
-    margin-right: 200px;
+    width: 250px; /* Size of the circular image */
+    height: 250px; /* Ensure the height matches the width for a circle */
+    border-radius: 50%; /*makes the image circular */
+    margin: 0 auto; /* Centers the image */
+    display: block;
+    object-fit: cover; /* Ensures the image covers the circle */
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 20px;
+    text-align: center;
 }
