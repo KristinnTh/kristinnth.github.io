@@ -101,3 +101,20 @@ p {
     margin: 0 0 20px;
     text-align: center;
 }
+.resume-button{
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+section{
+    padding: 50px 0;
+    margin: 0 auto;
+}
+#Contact {
+    padding-bottom: 80px; /* Add more space at the bottom to ensure visibility */
+}
