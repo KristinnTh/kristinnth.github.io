@@ -87,13 +87,10 @@ li a{
     width: 250px; /* Size of the circular image */
     height: 250px; /* Ensure the height matches the width for a circle */
     border-radius: 50%; /*makes the image circular */
-    margin: 0 auto; /* Centers the image */
-    display: block;
-    object-fit: cover; /* Ensures the image covers the circle */
-    margin-bottom: 20px;
+    margin-right: 20px; /* Centers the image */
 }
 h1 {
-    margin: 20px 0 10px;
+    margin: 0 0 10px;
     text-align: center;
 }
 
@@ -110,6 +107,7 @@ p {
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 section{
     padding: 50px 0;
@@ -117,4 +115,23 @@ section{
 }
 #Contact {
     padding-bottom: 80px; /* Add more space at the bottom to ensure visibility */
+}
+.intro-container{
+    display: flex;
+    align-items: flex-start;
+    margin: 60px auto;
+    padding: 20px;
+
+}
+.intro-text{
+    max-width: 500px;
+}
+.button-and-social {
+    display: flex;
+    flex-direction: column; /* Stack the button and social icons vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.social-links{
+    display: flex;
+    gap: 10px;
 }
