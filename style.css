@@ -1,137 +1,175 @@
-
-/*  GENERAL  */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* this targets the whole page */
-*{
-    text-decoration: none;
+/* ========== RESET STYLES ========== */
+/* Reset browser default styling to create a clean slate */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Target html in the body*/
-body{
-    background-color: rgb(255, 255, 255);
-    font-family: "Poppinns", sans-serif;
-    position: relative; /* Allow absolute positioning of child elements */
-    height: 100vh; /* Ensure the body takes full viewport height */
-    margin: 0; /* Remove default margin */
+
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
 }
 
-/*if we click links to our pages it will scroll to them in a smooth manner*/
-html{
-    scroll-behavior: smooth;
+/* ========== NAVIGATION STYLES ========== */
+.navbar {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 0;
+    position: relative;
 }
 
-p{
-    color: rgb(85,85,85);
-}
-
-/*  TRANSISTIONS  */
-a, .btn{
-    transition: all 300ms ease;
-}
-
-/*  DESKTOP NAV  */
-.navbar{
-    background: cornflowerblue; 
-    padding: 15px;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 .navdiv{
-    display: flex; 
-    align-items: center; 
+    display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    align-items: center;
 }
-/*  STYLING LINK ELEMENT  */
-a{
-    color: black;
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
     text-decoration: none;
-    text-decoration-color: white;
-}
-
-a:hover{
-    color: grey;
-    text-decoration: underline;
-    text-decoration-color: rgb(181,181,181);
-}
-.logo a{
-    display: block; 
-    width: 80px; 
-    height: 80px;
-    color: white;
-}
-li{
-    list-style: none; 
-    display: inline-block;
-}
-li a{
-    color: white; 
-    font-size: 18px; 
-    font-weight: bold; 
-    margin-right: 25px;
-}
-.img-logo{
-    border-radius: 50%; /*makes the image circular */
-    width: 100%; /*ensure it fits within its container */
-    height: auto; /* Maintains aspect ratio */
-}
-.img-logo{
-    cursor: default;
-}
-
-.img-Headshot{
-    width: 250px; /* Size of the circular image */
-    height: 250px; /* Ensure the height matches the width for a circle */
-    border-radius: 50%; /*makes the image circular */
-    margin-right: 20px; /* Centers the image */
-}
-h1 {
-    margin: 0 0 10px;
-    text-align: center;
-}
-
-p {
-    margin: 0 0 20px;
-    text-align: center;
-}
-.resume-button{
-    display: inline-block;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
     font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 10px;
+    padding: 10px;
 }
-section{
-    padding: 50px 0;
-    margin: 0 auto;
-}
-#Contact {
-    padding-bottom: 80px; /* Add more space at the bottom to ensure visibility */
-}
-.intro-container{
-    display: flex;
-    align-items: flex-start;
-    margin: 60px auto;
-    padding: 20px;
 
+/* Hamburger menu (hidden on large screens) */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
 }
-.intro-text{
-    max-width: 500px;
-}
-.button-and-social {
+
+.navbar ul {
+    list-style: none;
     display: flex;
-    flex-direction: column; /* Stack the button and social icons vertically */
-    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: space-around;
 }
-.social-links{
-    display: flex;
-    gap: 10px;
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+/* ========== PROFILE SECTION STYLES ========== */
+#profile {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.img-Headshot {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.intro-text {
+    margin-top: 20px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* ========== SECTION STYLES (General) ========== */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* ========== ABOUT SECTION STYLES ========== */
+/* Add specific styles for the about section here */
+
+/* ========== SKILLS SECTION STYLES ========== */
+/* Add specific styles for the skills section here */
+
+/* ========== PROJECTS SECTION STYLES ========== */
+/* Add specific styles for the projects section here */
+
+/* ========== CONTACT SECTION STYLES ========== */
+/* Add specific styles for the contact section here */
+
+/* ========== MEDIA QUERIES ========== */
+/* Make the site responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links by default on smaller screens */
+        flex-direction: column; /* When shown, display the links vertically */
+        position: absolute; /* Absolute position to overlay menu */
+        top: 100%;
+        right: 0;
+        background-color: #0073e6;
+        width: 100%;
+        text-align: right;
+    }
+
+    /* Show the nav-links when clicked */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links img {
+        width: 20px;
+    }
 }
