@@ -94,8 +94,17 @@
 
            <!-- ========== CONTACT SECTION ========== -->
             <section id="Contact">
-                <h2>CONTACT ME</h2>
-                <p>Insert Contact Form Here That Connects to Email</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>CONTACT ME</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="325f2a44-2ef2-41bc-8d8e-9c9a6ecbf626">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
 
 
