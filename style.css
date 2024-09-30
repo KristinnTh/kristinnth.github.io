@@ -124,7 +124,60 @@ section h2 {
 
 /* ========== ABOUT SECTION STYLES ========== */
 /* Add specific styles for the about section here */
+#About{
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+}
 
+#About h2{
+    font-size: 2.5rem;
+    color: #002765; /*match the brand color*/
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;/* center the content*/
+    padding: 20px;
+}
+.about-text {
+    flex: 1; /* Allow text to take up available space */
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    padding-right: 20px; /* Add some space between the text and image */
+}
+.about-text p{
+    margin-bottom: 20px;
+}
+.about-text a {
+    color: #8045ff; /* Highlight the link with my theme color */
+    text-decoration: none;
+}
+.about-text a:hover{
+    text-decoration: underline;
+}
+.about-img {
+    width: 35%; /* Adjust the width to be relative to the section */
+    height: auto; /* Keep the aspect ratio of the image */
+    object-fit: cover; /* Ensures image fits well */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Responsive Design: Stack text and image on smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack the content vertically */
+    }
+
+    .about-img {
+        width: 100%; /* Image takes full width on small screens */
+        margin-top: 20px; /* Add spacing above the image */
+    }
+}
 /* ========== SKILLS SECTION STYLES ========== */
 /* Add specific styles for the skills section here */
 
