@@ -5,7 +5,7 @@ Self Made Portfolio from scratch without the use of templates and Jekyll
 # To do list:
 Before this website is complete the below must be done:
 - Change The Profile Image to be a professional LinkedIn Photo
-- Add Bulk to the About me Section
+- ~~Add Bulk to the About me Section~~
 - Change the project sections to have REAL projects
 - Change the size of the project cards to all be the same.
 - change the projects section to when hovered over a project card it changes background colors, high lights etc.
