@@ -19,5 +19,5 @@ Before this website is complete the below must be done:
 - Update Resume Download.
 - Modify the LinkedIN and GitHub Buttons to be smaller
 - Add a Languge method for projects to be visually appealing and functionality wise able to catergorize projects by language.
-- Add a Light Mode and Dark Mode Button.
+- ~~Add a Light Mode and Dark Mode Button.~~
 
