@@ -18,4 +18,5 @@ Before this website is complete the below must be done:
 - Add the Images to the skills tab with links to those specific languages like react, etc
 - Update Resume Download.
 - Modify the LinkedIN and GitHub Buttons to be smaller
+- Add a Languge method for projects to be visually appealing and functionality wise able to catergorize projects by language.
 
