@@ -15,8 +15,8 @@
     --accent-color: #0071ff;
 }
 #theme-switch{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     padding: 0;
     border-radius: 50%;
     background-color: var(--base-variant);
