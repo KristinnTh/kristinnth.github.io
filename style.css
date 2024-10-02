@@ -114,29 +114,57 @@ html{
 
 /* ========== PROFILE SECTION STYLES ========== */
 #profile {
-    text-align: center;
-    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 50px;
     background-color: var(--base-color);
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.profile-pic-container{
+    margin-bottom: 80px;
 }
 
 .img-Headshot {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 
 .intro-text {
-    margin-top: 20px;
+   text-align: left;
+}
+.title{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
 }
 
+.intro-text-2{
+    font-size:1.5rem;
+    color: var(--secondary-text);
+    margin-bottom: 20px;
+}
+
+/* ========== Resume Button ========== */
 .resume-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: var(--accent-color);
-    color: var(--text-color);/* color on resume button */
+    color: #fff;/* color on resume button */
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -157,8 +185,8 @@ html{
     content: "";
     background: linear-gradient(
       45deg,
-      #569db3, #468da9, #62caf4, #18dcc8,
-      #2099e4, #7d07a58c, #df37ac, #f286e2
+      #569db3, #468da9, #24e824, #18dcc8,
+      #2099e4, #d17aed8c, #df37ac, #f286e2
     );
     position: absolute;
     top: -2px;
@@ -183,30 +211,34 @@ html{
     color: #000;
     font-weight: bold;
   }
- 
+/* ========== Social Links ========== */
 .social-links {
-    margin-top: 10px;
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    display: flex;
+    gap: 20px; /* Space between icons */
 }
 
 .social-icon img {
-    width: 30px;
+    width: 50px;
     margin: 0 10px;
 }
 .github-icon{
-    width: 30px;
+    width: 50px;
     height: auto;
     transition: transform 0.3s;
 }
 .github-icon:hover{
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 .linkedin-icon{
-    width: 30px;
+    width: 50px;
     height: auto;
     transition: transform 0.3s;
 }
 .linkedin-icon:hover{
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 /* ========== SECTION STYLES (General) ========== */
