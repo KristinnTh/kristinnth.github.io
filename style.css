@@ -272,6 +272,7 @@ section h2 {
 }
 /*========== SKILLS ========== */
 .language-container{
+    margin-left: 50px;
     display: flex;
 }
 .cpp{
@@ -283,6 +284,14 @@ section h2 {
     height: auto;
 }
 .html{
+    width: 100px;
+    height: auto;
+}
+.javascript{
+    width: 100px;
+    height: auto;
+}
+.css{
     width: 100px;
     height: auto;
 }
