@@ -270,6 +270,22 @@ section h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
+/*========== SKILLS ========== */
+.language-container{
+    display: flex;
+}
+.cpp{
+    width: 100px;
+    height: auto;
+}
+.csharp{
+    width: 100px;
+    height: auto;
+}
+.html{
+    width: 100px;
+    height: auto;
+}
 
 /* ========== ABOUT SECTION STYLES ========== */
 /* Add specific styles for the about section here */
