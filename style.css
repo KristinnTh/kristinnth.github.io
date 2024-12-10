@@ -340,6 +340,12 @@ section h2 {
     object-fit: cover; /* Ensures image fits well */
     border-radius: 10px; /* Optional: Add rounded corners */
 }
+
+
+
+
+
+
 @keyframes glowing {
     0% {background-position: 0 0;}
     50% {background-position: 400% 0;}
@@ -400,6 +406,71 @@ section h2 {
     margin-top: 16px;
     color:#fff
 }
+
+
+/* ========== Filter for project cards ========== */
+.portfolio {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-filters button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-filters button:hover {
+    background-color: #0056b3;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project.featured {
+    border: 2px solid gold;
+    background-color: #fdf3c7;
+  }
+  
+  .project h3 {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .project p {
+    color: #666;
+  }
+
+  
+  
 
 /* ========== CONTACT SECTION STYLES ========== */
 /* Add specific styles for the contact section here */

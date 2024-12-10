@@ -87,8 +87,22 @@
             <!-- ========== PROJECTS SECTION ========== -->
             <section id="Projects">
                 <h2>PROJECTS</h2>
+
+                <section class="portfolio">
+                    <!-- Filters -->
+                    <div class="project-filters">
+                      <button onclick="filterProjects('all')">All</button>
+                      <button onclick="filterProjects('javascript')">JavaScript</button>
+                      <button onclick="filterProjects('html')">HTML</button>
+                      <button onclick="filterProjects('C#')">C Sharp</button>
+                      <button onclick="filterProjects('year-1')">Year 1</button>
+                      <button onclick="filterProjects('year-2')">Year 2</button>
+                    </div>
+                  </section>
+
+                  
                 <div class="card-container">
-                    <div class="card">
+                    <div class="card" data-category="C# year-2">
                         <img src="img/UnityProject1.png">
                         <div class="card-content">
                             <h3>Unity Falling Leaves - Getting used to the basics</h3>
@@ -97,7 +111,7 @@
                             <a href="https://kristinnth.github.io/Falling-Leaves/" target="_blank" class="btn">View Project</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="javascript year-2">
                         <img src="img/carnivalbot.png">
                         <div class="card-content">
                             <h3>Carnival Discord Bot</h3>
@@ -106,7 +120,7 @@
                             <p>Check out the code on <a href="https://github.com/KristinnTh/Discord-Carnival-Bot" target="_blank">Github</a></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="C# year-1">
                         <img src="img/sis3.jpg">
                         <div class="card-content">
                             <h3>Project 3</h3>
@@ -116,7 +130,7 @@
                         </div>
                     </div>
                      <!-- New card for To-Do List App -->
-                    <div class="card">
+                    <div class="card" data-category="html year-1">
                         <img src="img/ToDoList.png" alt="To-Do List App Icon"> <!-- Optional: add the project image -->
                         <div class="card-content">
                             <h3>To-Do List App</h3>
@@ -153,6 +167,27 @@
                 hamburger.addEventListener('click', () => {
                     navLinks.classList.toggle('active');
                 });
+
+
+
+                //CATERGORY AREA
+                function filterProjects(category) {
+                    const cards = document.querySelectorAll('.card'); // Select all cards
+            
+                    cards.forEach(card => {
+                        if (category === 'all') {
+                            card.style.display = 'block'; // Show all cards
+                        } else {
+                            // Check if the card matches the selected category
+                            const categories = card.getAttribute('data-category');
+                            if (categories.includes(category)) {
+                                card.style.display = 'block'; // Show card
+                            } else {
+                                card.style.display = 'none'; // Hide card
+                            }
+                        }
+                    });
+                }
             </script>
         </body>
 </html>
